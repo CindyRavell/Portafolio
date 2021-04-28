@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kiwi+Maru:wght@500&display=swap');
+
+
+/*General format*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 0 0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    color: #0E2431;
+  }
+
+/* quitar formato lista */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*Quitar la linea de link*/
+a{
+    text-decoration: none;
+}
+img{
+    
+    max-width: 50%;
+    top: 100px;
+    height: auto;
+    display: block;        
+    align-self: center;    /* vertical centering */
+    width: 400px;
+
+}
+
+.txt {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 16px;
+    color: grey;
+}
+/* ****************      HEAD - NAV BAR     **************** */
+.nav_Grid{
+    
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1 rem;
+    margin-right: 1 rem;
+}
+.header{
+    width: 100%;
+    background-color: rosybrown;
+    position:fixed ;
+    top:0;
+    left:0;
+    z-index:100 ;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, .15)
+}
+
+.nav{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 768px){
+    
+    .nav_menu{
+        position: fixed;
+        top: 3rem;
+        right: -50%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: rgba(100, 48, 85,.8);
+        transition: 1s;
+        overflow: hidden;
+    }
+
+    .nav_toogle{
+        color:rgb(77, 36, 64);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .nav_toggle:hover{
+        color:rgb(134, 69, 114);
+    }
+}
+
+.nav_item{
+    margin-bottom:2rem ;
+    cursor: pointer;
+    color: rgb(87, 78, 78);
+}
+
+
+.nav_item:hover{
+    position:center;
+    color: rgb(65, 98, 99);
+}
+
+
+.nav_logo{
+    color:rgb(77, 36, 64);
+}
+.nav_logo:hover{
+    color:rgb(134, 69, 114);
+}
+
+@media screen and (min-width: 768px){
+.nav_toogle{
+    color:rgb(77, 36, 64);
+    font-size: 1.5rem;
+    cursor: pointer;
+    visibility: hidden;
+}
+.nav_toggle:hover{
+    color:rgb(134, 69, 114);
+}
+}
+
+/* **************** Principal page **************** */
+  
+#prin_b{
+      grid-area: presentation;
+    
+
+  }
+#prin_a{
+    grid-area: titulo1;
+}
+
+#prof{
+    grid-area: prof;
+}
+
+#imagenCindy{
+    grid-area: Imagen;
+    
+}
+
+#centro_principal{
+    grid-area: cuadro;
+}
+
+
+.container_principal_section {
+    
+    height: calc(100vh - 3rem );
+    display: grid;
+    
+    background-color: rgb(212, 212, 212);
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas: 
+    ".   .   .   ."
+    ". cuadro cuadro ."
+    ". cuadro cuadro ."
+    ".   .   .   .";
+}
+.block {
+    display: inline-block;
+    background-color:rgb(204, 196, 202);
+  }
+  
+  .container {
+    text-align: center;
+}
+.centroGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .02fr 1fr;
+    grid-template-areas: 
+    "Imagen titulo1"
+    "Imagen prof"
+    "Imagen presentation";
+
+    border-radius: 30px;
+
+}
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+  
+
+
+@media screen and (min-width: 768px){
+    .nav{
+        height: calc(3rem + 1rem);
+      }
+      .nav_list{
+        display: flex;
+        padding-top: 0;
+      }
+      .nav_item{
+        margin-left: 3rem;
+        margin-bottom: 0;
+      }
+      .nav_toggle{
+        display: none;
+      }
+      .nav_link{
+        color: var#0E2431;
+      }
+    
+    }
+    
+
+/* **************** Skills page **************** */
+
+
+#title_Skills{
+    grid-area: skillTitle;
+  
+
+}
+#skill1{
+  grid-area: skill1;
+  animation-name: appered1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#skill2{
+    grid-area: skill2;
+    animation-name: appered2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#skill3{
+  grid-area: skill3;
+  animation-name: appered3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#skill4{
+    grid-area: skill4;
+    animation-name: appered4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#skill5{
+    grid-area: skill5;
+    animation-name: appered5;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#skill6{
+    grid-area: skill6;
+    animation-name: appered6;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#skill7{
+    grid-area: skill7;
+    animation-name: appered7;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#skill8{
+    grid-area: skill8;
+    animation-name: appered8;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#textSkills{
+    grid-area: textSkill;
+    
+}
+
+.containerSkills {
+    height: calc(100vh - 3rem );
+    display: grid;
+    background-color: rgb(204, 197, 201);
+    grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
+    grid-template-rows: .25fr 1fr 1fr 1fr .25fr;
+    grid-template-areas: 
+    " .  skillTitle skillTitle skillTitle   . "
+    " .  textSkill textSkill textSkill  . "
+    " .  textSkill textSkill textSkill  . "
+    " .  textSkill textSkill textSkill  .";
+}
+
+.txtSkill{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-areas: 
+    "skill1 skill2 skill3"
+    "skill4 skill5 skill6"
+    "skill7 skill8 .";
+}
+
+.skill{
+    background-color: rgb(169, 184, 181);
+    margin: 10px;
+
+}
+
+
+@keyframes appered1 {
+    from {opacity: 3;}
+    to {background-color: rgba(87, 174, 201,.4); opacity: none;}
+  }
+
+
+  @keyframes appered2 {
+    from {opacity: 3;}
+    to {background-color: rgba(194, 170, 185,.4); opacity: none;}
+  }
+@keyframes appered3 {
+    from {opacity: 3;}
+    to {background-color: rgba(165, 110, 115, 0.4); opacity: none;}
+}
+
+@keyframes appered4 {
+    from {opacity: 3;}
+    to {background-color: rgba(186, 173, 196, 0.4); opacity: none;}
+}
+
+@keyframes appered5 {
+    from {opacity: 3;}
+    to {background-color: rgba(176, 185, 153, 0.4); opacity: none;}
+}
+
+@keyframes appered6 {
+    from {opacity: 3;}
+    to {background-color: rgba(206, 152, 116, 0.4); opacity: none;}
+}
+
+@keyframes appered7 {
+    from {opacity: 3;}
+    to {background-color: rgba(118, 119, 182, 0.4); opacity: none;}
+}
+
+@keyframes appered8 {
+    from {opacity: 3;}
+    to {background-color: rgba(108, 152, 158, 0.4); opacity: none;}
+}
+
+.skillContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* **************** Tools page **************** */
+
+
+#title_Tools{
+    grid-area: ToolTitle;
+  
+
+}
+#Tool1{
+  grid-area: Tool1;
+}
+
+#Tool2{
+  grid-area: Tool2;
+  
+}
+
+#Tool3{
+  grid-area: Tool3;
+}
+
+#Tool4{
+    grid-area: Tool4;
+}
+
+#Tool5{
+    grid-area: Tool5;
+}
+
+#Tool6{
+    grid-area: Tool6;
+}
+
+#Tool7{
+    grid-area: Tool7;
+}
+
+#Tool8{
+    grid-area: Tool8;
+}
+
+#textTools{
+    grid-area: textTool;
+}
+
+.containerTools {
+    height: calc(100vh - 3rem );
+    display: grid;
+    background-color: rgb(204, 197, 201);
+    grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
+    grid-template-rows: .25fr 1fr 1fr 1fr .25fr;
+    grid-template-areas: 
+    " .  ToolTitle ToolTitle ToolTitle   . "
+    " .  textTool textTool textTool  . "
+    " .  textTool textTool textTool  . "
+    " .  textTool textTool textTool  .";
+}
+
+.txtTools{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-areas: 
+    "Tool1 Tool2 Tool3"
+    "Tool4 Tool5 Tool6"
+    "Tool7 Tool8 .";
+}
+
+.Tool{
+    display: inline-block;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px; 
+    background-color: rgb(169, 184, 181);    
+}
+
+  
+  
+.ToolContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* **************** Projects Page **************** */
+
+
+#title_Project{
+    grid-area: ProjectTitle;
+  
+
+}
+#Project1{
+  grid-area: Project1;
+  background-color: rgb(188, 183, 194);
+  border-radius: 3%;
+}
+
+#Project2{
+  grid-area: Project2;
+  background-color: rgb(183, 174, 194);
+  border-radius: 3%;
+  
+}
+
+#titleproject1{
+    grid-area: titleproject1;
+}
+
+#IMGProject1{
+    grid-area: IMGProject1;
+}
+
+#titleproject2{
+    grid-area: titleproject2;
+}
+
+#IMGProject2{
+    grid-area: IMGProject2;
+}
+
+.containerProject {
+    height: calc(100vh - 3rem );
+    display: grid;
+    background-color: rgb(204, 197, 201);
+    grid-template-columns: .20fr 1fr 1fr .20fr;
+    grid-template-rows: .25fr 1fr 1fr .20fr;
+    grid-template-areas: 
+    " .  ProjectTitle ProjectTitle   . "
+    " .  Project1  Project2  . "
+    " .  Project1  Project2  . "
+    " .  .  .  .";
+}
+
+.txtProject1{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows:  .2fr 1fr;
+    grid-template-areas: 
+    "titleproject1"
+    "IMGProject1";
+}
+
+.txtProject2{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows:  .2fr 1fr;
+    grid-template-areas: 
+    "titleproject2"
+    "IMGProject2";
+}
+
+.blockpro {
+    display: inline-block;
+    background-color:rgb(204, 196, 202);
+  }
+  
+  .containerpro {
+    text-align: center;
+}
+.Project{
+
+    border-radius: 20%;   
+    max-width: 50%;
+    top: 100px;
+    height: auto;
+    display: block;        
+    align-self: center;    /* vertical centering */
+    width: 220px;
+}
+
+  
+.ProjectContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* **************** Contact Page **************** */
+
+
+#title_Contact{
+    grid-area: ContactTitle;
+  
+
+}
+#Contact1{
+  grid-area: Contact1;
+  background-color: rgb(109, 109, 109);
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+}
+
+#Contact2{
+  grid-area: Contact2;
+  background-color: rgb(109, 109, 109);
+  border-top-right-radius: 3%;
+  border-bottom-right-radius: 3%;
+  
+}
+
+#cont1{
+    grid-area: cont1;
+}
+#cont2{
+    grid-area: cont2;
+}
+#cont3{
+    grid-area: cont3;
+}
+#ubication{
+    grid-area: ubication;
+    border-style:dotted ;
+    border-color: grey;
+
+}
+#mail{
+    grid-area: mail;
+    
+}
+
+#mail2{
+    grid-area: mail2;
+}
+
+#tel{
+    grid-area: tel;
+    border-style:dotted ;
+    border-color: grey;
+}
+.containerContact {
+    height: calc(80vh - 3rem );
+    display: grid;
+    background-color: rgb(204, 197, 201);
+    grid-template-columns: .02fr 1fr 1fr .02fr;
+    grid-template-rows: .25fr 1fr 1fr .02fr;
+    grid-template-areas: 
+    " .  ContactTitle ContactTitle   . "
+    " .  Contact1  Contact2  . "
+    " .  Contact1  Contact2  . "
+    " .  .  .  .";
+}
+
+.txtContact1{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "cont1 ubication"
+    "cont2 mail"
+    "cont2 mail2"
+    "cont3 tel";
+}
+
+#cont11{
+    grid-area: cont11;
+}
+#cont22{
+    grid-area: cont22;
+}
+#cont33{
+    grid-area: cont33;
+}
+
+.txtContact2{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-areas: 
+    "cont11"
+    "cont22"
+    "cont33";
+}
+
+.Contact{
+    border-radius: 20%;   
+    max-width: 50%;
+    top: 100px;
+    height: auto;
+    display: block;        
+    align-self: center;    /* vertical centering */
+    width: 220px;
+}
+
+  
+  
+.ContactContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kiwi+Maru:wght@500&display=swap');
 
 
+
 /*General format*/
 *,::before,::after{
     box-sizing: border-box;
@@ -41,12 +42,12 @@ img{
 .txt {
     font-family: 'Amatic SC', cursive;
     font-family: 'Kiwi Maru', serif;
-    font-size: 16px;
+    font-size: 90%;
     color: grey;
 }
 /* ****************      HEAD - NAV BAR     **************** */
 .nav_Grid{
-    max-width: 1024px;
+   
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
@@ -77,6 +78,7 @@ img{
 /*OCULTAR*/
 @media screen and (max-width: 768px){
     
+    
     .nav_menu{
         position: fixed;
         top: 3rem;
@@ -86,24 +88,14 @@ img{
         padding: 2rem;
         background-color: rgba(100, 48, 85,.9);
         transition: 1s;
-        /*overflow: hidden;*/
+        
     }
-/*
-    .nav_toogle{
-        color:rgb(77, 36, 64);
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-    .nav_toggle:hover{
-        color:rgb(134, 69, 114);
-    }
-*/
 }
 
 .nav_item{
     margin-bottom:2rem ;
     cursor: pointer;
-    padding: 4%;
+    padding: 1%;
 }
 
 .nav_link{
@@ -160,7 +152,7 @@ img{
 @media screen and (min-width: 768px){
 .nav_toogle{
     color:rgb(77, 36, 64);
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
     visibility: hidden;
 }
@@ -198,49 +190,86 @@ img{
     grid-area: cuadro;
 }
 
+@media screen and (max-width: 768px) {
+    .container_principal_section {
+        width: 100%;
+        height: 100%;
+        row-gap: 1rem;
+        display: grid;
+        background-color: rgb(212, 212, 212);
+        grid-template-columns: .2fr 2fr .2fr;
+        grid-template-rows: .2fr 2fr 2fr .2fr;
+        grid-template-areas: 
+        ".   .     ."
+        ". cuadro  ."
+        ". cuadro  ."
+        ".   .     .";
+    }
+    .block {
+        display: inline-block;
+        background-color:rgb(204, 196, 202);
+    }
+      
+      .container {
+        text-align: center;
+    }
+    .centroGrid{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .centrar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+}
+@media screen and (min-width: 768px) {
 
-.container_principal_section {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    background-color: rgb(212, 212, 212);
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
-    grid-template-areas: 
-    ".   .   .   ."
-    ". cuadro cuadro ."
-    ". cuadro cuadro ."
-    ".   .   .   .";
-}
-.block {
-    display: inline-block;
-    background-color:rgb(204, 196, 202);
-}
+    .container_principal_section {
+        width: 100%;
+        height:calc(100vh - 3rem);
+        display: grid;
+        background-color: rgb(212, 212, 212);
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr;
+        grid-template-areas: 
+        ".   .   .   ."
+        ". cuadro cuadro ."
+        ". cuadro cuadro ."
+        ".   .   .   .";
+    }
+    .block {
+        display: inline-block;
+        background-color:rgb(204, 196, 202);
+    }
+      
+      .container {
+        text-align: center;
+    }
+    .centroGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr .02fr 1fr;
+        grid-template-areas: 
+        "Imagen titulo1"
+        "Imagen prof"
+        "Imagen presentation";
+    
+        border-radius: 30px;
+    
+    }
+    .centrar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
   
-  .container {
-    text-align: center;
 }
-.centroGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr .02fr 1fr;
-    grid-template-areas: 
-    "Imagen titulo1"
-    "Imagen prof"
-    "Imagen presentation";
-
-    border-radius: 30px;
-
-}
-.centrar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-  
-
 
 @media screen and (min-width: 768px){
     .nav{
@@ -349,10 +378,13 @@ img{
     
 }
 
+
+@media screen and (min-width: 768px) {
+
 .containerSkills {
-    height: 100%;
+    height: calc(100vh - 3rem);
     display: grid;
-    background-color: rgb(204, 197, 201);
+    background-color:rgb(204, 197, 201);
     grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
     grid-template-rows: .25fr 1fr 1fr 1fr .25fr;
     grid-template-areas: 
@@ -374,8 +406,9 @@ img{
 
 .skill{
     background-color: rgb(169, 184, 181);
-    margin: 10px;
+    margin: 10%;
 
+}
 }
 
 
@@ -423,7 +456,8 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 10;
+    background-color: rgb(204, 197, 201);
 }
 
 /* **************** Tools page **************** */
@@ -472,7 +506,7 @@ img{
 }
 
 .containerTools {
-    height: 100%;
+    height: calc(100vh - 3rem);
     display: grid;
     background-color: rgb(204, 197, 201);
     grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
@@ -497,8 +531,8 @@ img{
 .Tool{
     display: inline-block;
     border-radius: 50%;
-    width: 130px;
-    height: 130px; 
+    width: 120px;
+    height: 120px; 
     background-color: rgb(169, 184, 181);    
 }
 
@@ -508,7 +542,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 10%;
 }
 
 /* **************** Projects Page **************** */
@@ -548,6 +582,7 @@ img{
     grid-area: IMGProject2;
 }
 
+@media screen and (min-width: 768px) {
 .containerProject {
     height: 100%;
     display: grid;
@@ -597,7 +632,7 @@ img{
     align-self: center;    /* vertical centering */
     width: 220px;
 }
-
+}
   
 .ProjectContent{
     display: flex;
@@ -720,5 +755,8 @@ img{
     align-items: center;
     margin: 10px;
 }
+
+
+
 
 /******************RESPONSIVE***********************/

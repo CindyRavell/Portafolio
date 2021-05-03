@@ -10,7 +10,6 @@ html{
 }
 
 body{
-    display: flex;
     flex-direction: column;
     margin: 3rem 0 0 0;
     font-family: 'Amatic SC', cursive;
@@ -35,7 +34,7 @@ img{
     height: auto;
     display: block;        
     align-self: center;    /* vertical centering */
-    width: 400px;
+    
 
 }
 
@@ -131,20 +130,31 @@ img{
     color:rgb(134, 69, 114);
 }
 }
+/******************RESPONSIVE***********************/
+@media screen and (max-width: 800px) {
+    .container_principal_section {
+    display: flex;
+  }
+      
+  }
 
 /* **************** Principal page **************** */
   
 #prin_b{
       grid-area: presentation;
-    
-
+      padding: 5% ;
+      box-sizing: border-box;
   }
 #prin_a{
     grid-area: titulo1;
+    padding: 5% ;
+    box-sizing: border-box;
 }
 
 #prof{
     grid-area: prof;
+    padding: 5% ;
+      box-sizing: border-box;
 }
 
 #imagenCindy{
@@ -158,10 +168,9 @@ img{
 
 
 .container_principal_section {
-    
+    width: 100%;
     height: calc(100vh - 3rem );
     display: grid;
-    
     background-color: rgb(212, 212, 212);
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: 1fr 2fr 2fr 1fr;
@@ -236,6 +245,8 @@ img{
   animation-name: appered1;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  padding: 5% ;
+  box-sizing: border-box;
 }
 
 #skill2{
@@ -243,6 +254,8 @@ img{
     animation-name: appered2;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    padding: 5% ;
+    box-sizing: border-box;
 }
 
 #skill3{
@@ -250,6 +263,8 @@ img{
   animation-name: appered3;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  padding: 5% ;
+  box-sizing: border-box;
 }
 
 #skill4{
@@ -257,34 +272,44 @@ img{
     animation-name: appered4;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    padding: 5% ;
+    box-sizing: border-box;
 }
 
 #skill5{
     grid-area: skill5;
     animation-name: appered5;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    padding: 5% ;
+    box-sizing: border-box;
 }
 
 #skill6{
     grid-area: skill6;
     animation-name: appered6;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    padding: 5% ;
+    box-sizing: border-box;
 }
 
 #skill7{
     grid-area: skill7;
     animation-name: appered7;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    padding: 5% ;
+    box-sizing: border-box;
 }
 
 #skill8{
     grid-area: skill8;
     animation-name: appered8;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    padding: 5% ;
+    box-sizing: border-box;
 }
 
 #textSkills{

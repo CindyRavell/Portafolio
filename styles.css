@@ -201,7 +201,7 @@ img{
 
 .container_principal_section {
     width: 100%;
-    height: calc(100vh - 3rem );
+    height: 100%;
     display: grid;
     background-color: rgb(212, 212, 212);
     grid-template-columns: 1fr 2fr 2fr 1fr;
@@ -350,7 +350,7 @@ img{
 }
 
 .containerSkills {
-    height: calc(100vh - 3rem );
+    height: 100%;
     display: grid;
     background-color: rgb(204, 197, 201);
     grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
@@ -472,7 +472,7 @@ img{
 }
 
 .containerTools {
-    height: calc(100vh - 3rem );
+    height: 100%;
     display: grid;
     background-color: rgb(204, 197, 201);
     grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
@@ -549,7 +549,7 @@ img{
 }
 
 .containerProject {
-    height: calc(100vh - 3rem );
+    height: 100%;
     display: grid;
     background-color: rgb(204, 197, 201);
     grid-template-columns: .20fr 1fr 1fr .20fr;
@@ -659,7 +659,7 @@ img{
     border-color: grey;
 }
 .containerContact {
-    height: calc(80vh - 3rem );
+    height: 100%;
     display: grid;
     background-color: rgb(204, 197, 201);
     grid-template-columns: .02fr 1fr 1fr .02fr;
@@ -722,10 +722,3 @@ img{
 }
 
 /******************RESPONSIVE***********************/
-@media screen and (max-width: 800px) {
-
-    .container_principal_section{
-        width: 100%;
-    }
-      
-  }

@@ -46,7 +46,7 @@ img{
 }
 /* ****************      HEAD - NAV BAR     **************** */
 .nav_Grid{
-    
+    max-width: 1024px;
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
@@ -70,25 +70,25 @@ img{
     justify-content: space-between;
     align-items: center;
     font-weight: 900;
-    margin: auto;
-    overflow: hidden;
+    /*margin: auto;
+    overflow: hidden;*/
 }
 
-
+/*OCULTAR*/
 @media screen and (max-width: 768px){
     
     .nav_menu{
         position: fixed;
         top: 3rem;
-        right: -50%;
+        right: -100%;
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: rgba(100, 48, 85,.8);
+        background-color: rgba(100, 48, 85,.9);
         transition: 1s;
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
-
+/*
     .nav_toogle{
         color:rgb(77, 36, 64);
         font-size: 1.5rem;
@@ -97,19 +97,34 @@ img{
     .nav_toggle:hover{
         color:rgb(134, 69, 114);
     }
+*/
 }
 
 .nav_item{
     margin-bottom:2rem ;
     cursor: pointer;
-    color: rgb(87, 78, 78);
+    padding: 4%;
+}
+
+.nav_link{
+    position: relative;
+    color: rgb(177, 197, 202);
 }
 
 
-.nav_item:hover{
+.nav_link:hover{
     position:center;
-    color: rgb(65, 98, 99);
+    color: rgb(88, 133, 134);
 }
+
+.nav_link:hover::after{
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: .18rem;
+    left: 0;
+    top: 2rem;
+    background-color:aqua ;}
 
 
 .nav_logo{
@@ -119,6 +134,29 @@ img{
     color:rgb(134, 69, 114);
 }
 
+.nav_toogle{
+    color:rgb(77, 36, 64);
+    cursor: pointer;
+}
+.nav_toogle:hover{
+    color:rgb(134, 69, 114);
+}
+
+
+/*Active menu*/
+.active::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color:aqua;
+  }
+/*=== Show menu ===*/
+.show{
+    right: 0;
+  }
 @media screen and (min-width: 768px){
 .nav_toogle{
     color:rgb(77, 36, 64);
@@ -130,13 +168,7 @@ img{
     color:rgb(134, 69, 114);
 }
 }
-/******************RESPONSIVE***********************/
-@media screen and (max-width: 800px) {
-    .container_principal_section {
-    display: flex;
-  }
-      
-  }
+
 
 /* **************** Principal page **************** */
   
@@ -183,7 +215,7 @@ img{
 .block {
     display: inline-block;
     background-color:rgb(204, 196, 202);
-  }
+}
   
   .container {
     text-align: center;
@@ -688,3 +720,12 @@ img{
     align-items: center;
     margin: 10px;
 }
+
+/******************RESPONSIVE***********************/
+@media screen and (max-width: 800px) {
+
+    .container_principal_section{
+        width: 100%;
+    }
+      
+  }

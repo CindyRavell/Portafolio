@@ -124,7 +124,9 @@ img{
     top: 2rem;
     background-color:aqua ;}
 
-
+.navLogo{
+    margin-left: .5rem;
+}
 .nav_logo{
     color:rgb(77, 36, 64);
 }
@@ -222,13 +224,14 @@ img{
     .centroGrid{
         display: flex;
         flex-direction: column;
+
     
     }
     .centrar{
         display: flex;
         align-items: center;
         justify-content: center;
-    
+        padding: .5rem;
     }
     
 }
@@ -263,7 +266,6 @@ img{
         "Imagen titulo1"
         "Imagen prof"
         "Imagen presentation";
-    
         border-radius: 30px;
     
     }
@@ -271,10 +273,16 @@ img{
         display: flex;
         align-items: center;
         justify-content: center;
-    
+        padding: .5rem;
     }
 
   
+}
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
 }
 
 @media screen and (min-width: 768px){
@@ -515,8 +523,8 @@ img{
     height: 100%;
     display: grid;
     background-color: rgb(204, 197, 201);
-    grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
-    grid-template-rows: .25fr 1fr 1fr 1fr .25fr;
+    grid-template-columns: .15fr 1fr 1fr 1fr .15fr;
+    grid-template-rows: .25fr 1.5fr 1.5fr 1.5fr .25fr;
     grid-template-areas: 
     " .  ToolTitle ToolTitle ToolTitle   . "
     " .  textTool textTool textTool  . "
@@ -563,14 +571,15 @@ img{
 #Project1{
   grid-area: Project1;
   background-color: rgb(188, 183, 194);
-  border-radius: 3%;
+  border-radius: 5%;
+  padding: .4rem;
 }
 
 #Project2{
   grid-area: Project2;
   background-color: rgb(183, 174, 194);
-  border-radius: 3%;
-  
+  border-radius: 5%;
+  padding: .4rem;
 }
 
 #titleproject1{
@@ -610,6 +619,7 @@ img{
     grid-template-areas: 
     "titleproject1"
     "IMGProject1";
+
 }
 
 .txtProject2{
@@ -631,7 +641,7 @@ img{
 }
 .Project{
 
-    border-radius: 20%;   
+     
     max-width: 50%;
     top: 100px;
     height: auto;
@@ -712,6 +722,7 @@ img{
     " .  Contact1  Contact2  . "
     " .  Contact1  Contact2  . "
     " .  .  .  .";
+    font-weight: bold;
 }
 
 .txtContact1{

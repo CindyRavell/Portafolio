@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kiwi+Maru:wght@500&display=swap');
 
 
-
+:target::before {
+    content: "";
+    display: block;
+    height: 50px; /* aquí la altura de la cabecera fija*/
+    margin: -50px 0 0; /* altura negativa de la cabecera fija */
+  }
 /*General format*/
 *,::before,::after{
     box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
+    background-color:  rgb(204, 196, 202);
 }
 
 body{
@@ -230,7 +236,7 @@ img{
 
     .container_principal_section {
         width: 100%;
-        height:calc(100vh - 3rem);
+        height:100%;
         display: grid;
         background-color: rgb(212, 212, 212);
         grid-template-columns: 1fr 2fr 2fr 1fr;
@@ -382,7 +388,7 @@ img{
 @media screen and (min-width: 768px) {
 
 .containerSkills {
-    height: calc(100vh - 3rem);
+    height: 100%;
     display: grid;
     background-color:rgb(204, 197, 201);
     grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
@@ -406,7 +412,7 @@ img{
 
 .skill{
     background-color: rgb(169, 184, 181);
-    margin: 10%;
+    margin: 5%;
 
 }
 }
@@ -506,7 +512,7 @@ img{
 }
 
 .containerTools {
-    height: calc(100vh - 3rem);
+    height: 100%;
     display: grid;
     background-color: rgb(204, 197, 201);
     grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
@@ -543,6 +549,7 @@ img{
     justify-content: center;
     align-items: center;
     margin: 10%;
+    margin-top: auto;
 }
 
 /* **************** Projects Page **************** */
@@ -633,7 +640,8 @@ img{
     width: 220px;
 }
 }
-  
+
+
 .ProjectContent{
     display: flex;
     justify-content: center;

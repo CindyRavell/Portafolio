@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+    
+
     <head>
         <title>Cindy Ravell Portafolio</title>
         
         <link type="text/css" rel="stylesheet" href="styles.css">
         <!--Iconos-->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
         <!--ScrollReveal-->
         <script src="https://unpkg.com/scrollreveal"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -18,18 +21,19 @@
             ********************************HEADER********************************
         -->
         <header class="header">
-            <nav class="nav nav_Grid navLogo">
-                <div>
+            <nav class="nav nav_Grid ">
+                <div class="navLogo">
                     <a href="#home" class="nav_logo">Cindy Ravellously</a>
                 </div>
             
                 <div class="nav_menu" id="navMenu">
                     <ul class="nav_list">
                         <li class="nav_item" ><a href="#home" class="nav_link active">HOME</a></li>
-                        <li class="nav_item"><a href="#skills" class="nav_link">SKILLS</a></li>
-                        <li class="nav_item"><a href="#tools" class="nav_link">TOOLS</a></li>
-                        <li class="nav_item"><a href="#projects" class="nav_link">PROJECTS</a></li>
-                        <li class="nav_item"><a href="#contact" class="nav_link">CONTACT</a></li>
+                        <li class="nav_item"><a href="#title_Interes" class="nav_link">INTEREST</a></li>
+                        <li class="nav_item"><a href="#title_Skills" class="nav_link">SKILLS</a></li>
+                        <li class="nav_item"><a href="#title_Tools" class="nav_link">TOOLS</a></li>
+                        <li class="nav_item"><a href="#title_Project" class="nav_link">PROJECTS</a></li>
+                        <li class="nav_item"><a href="#title_Contact" class="nav_link">CONTACT</a></li>
                     </ul>
                 </div>
 
@@ -44,6 +48,7 @@
         </header>
 
         <!-- ************************* Principal section ********************************-->
+        <div class="FatherContainer">
         <section id="home" name="mi-anclaje">
             <div id="home" class="container_principal_section">
             
@@ -57,7 +62,7 @@
                     </div>
     
                     <div  id = "imagenCindy" class="centrar block img" style="border-top-left-radius:10%; border-bottom-left-radius:   10%;">
-                        <img   class="centrar" src="img/cindyRavell.jpg" alt="Cindy" >
+                        <img class="centrar" src="img/cindyRavell.jpg" alt="Cindy" >
                     </div>
                     <div id="prin_b" class="txt centrar block description" style="border-bottom-right-radius: 10%;">
                         <p  class="centrar">I’m a responsible person, passionate and willing to continue learning. I consider myself a self-taught and proactive person.</p>
@@ -70,12 +75,47 @@
 
         </section>
         
+        <!-- ******************************** Interes ******************************** -->
+        
+        <h2 class="secundarioInteres" id="title_Interes" > Interests </h2>
+        <section id="Interes">
+            <div class="containerInteres"> 
+                <div id="textInteres" class = "txtInteres"  style="list-style-type: circle">
+                    
+                    <div id="interes1" class="Interes txt centrar" style="background-color: rgb(181, 201, 195);" >
+                        <p class="centrar">Web developement</p>
+                        <img class="centrar" src="img/seo.png" alt="Web-deve" >
+                    </div>
+    
+                    <div id="interes2" class="Interes txt centrar" style="background-color: rgb(181, 201, 195);">
+                        <p class=" centrar">Data Science </p>
+                        <img class="centrar" src="img/data-science.png" alt="Cindy" >
+                    </div>
+                    
+                    <div id="interes3" class="Interes txt centrar" style="background-color: rgb(181, 201, 195);">
+                        <p class=" centrar">Automation</p> <br>
+                        <img class="centrar" src="img/automatizacion.png" alt="elec" >
+                    </div>
+                    <div id="interes4" class="Interes txt centrar" style="background-color: rgb(181, 201, 195);">
+                        <p class=" centrar">Electrical Installations</p> <br>
+                        <img class="centrar" src="img/electricidad.png" alt="elec" >
+                    </div>
+                    <div id="interes5" class="Interes txt centrar" style="background-color: rgb(181, 201, 195);">
+                        <p class=" centrar">PCB design - electronic</p> <br>
+                        <img class="centrar" src="img/pcb.png" alt="elec" >
+                    </div>
+                    
+                </div>
+            </div>
+                
 
+        </section>
+        
         
         <!-- ******************************** Skills ******************************** -->
+        <h2 class="secundarioSkill" id="title_Skills" > Skills </h2>
         <section id="skills">
             <div class="containerSkills"> 
-                <h2 class="secundarioSkill" id="title_Skills" > Skills </h2>
                 <div id="textSkills" class = "txtSkill"  style="list-style-type: circle">
                     
                     <div id="skill1" class="skill txt centrar">
@@ -89,24 +129,13 @@
                     <div id="skill3" class="skill txt centrar">
                         <p  class="centrar">Perseverance to understand new topics and develop new skills </p>
                     </div>
-                    
-                    <div id="skill4" class="skill txt centrar" style="background-color: rgb(181, 201, 195);">
-                        <p class="centrar">Computer programming</p>
-                    </div>
+              
     
-                    <div id="skill5" class="skill txt centrar">
-                        <p class="centrar">Automation Systems</p>
-                    </div>
-    
-                    <div id="skill6" class="skill txt centrar" style="background-color: rgb(181, 201, 195);">
-                        <p class="centrar">Mechanics</p>
-                    </div>
-    
-                    <div id="skill7" class="skill txt centrar">
+                    <div id="skill4" class="skill txt centrar">
                         <p class="centrar">Empathy</p>
                     </div>
     
-                    <div id="skill8" class="skill txt centrar" style="background-color: rgb(181, 201, 195);">
+                    <div id="skill5" class="skill txt centrar" style="background-color: rgb(181, 201, 195);">
                         <p class="centrar">Teamwork</p>
                     </div>
                     
@@ -118,42 +147,52 @@
         
         
         <!-- ******************************** Tools ******************************** -->
-     <section id="tools">
+        <h2 class="secundarioTools" id="title_Tools"> Tools </h2>
+        <section id="tools">
         <div class="containerTools" >
-            <h2 class="secundarioTools" id="title_Tools"> Tools </h2>
-                <div id="textTools" class = "txtTools" >
+               <div id="textTools" class = "txtTools centrar" >
                     
                     <div id="Tool1" class="Tool txt">
-                        <div > <i class='bx bxl-python bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;"></i></div>
-                        
+                        <div > <i class='bx bxl-python bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;"  title="Python"  ></i></div>
                     </div>
     
-                    <div id="Tool2" class="Tool txt" style="background-color: rgb(181, 201, 195);">
-                        <div> <i class='bx bxl-nodejs bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;"></i></div>
+                    <div id="Tool11" class="Tool txt" style="background-color: rgb(181, 201, 195);">
+                        <div> <i class='bx bxl-nodejs bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;" title="NodeJs"  ></i></div>
                     </div>
                     
                     <div id="Tool3" class="Tool txt">
-                        <div > <i class='bx bxl-react bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;"></i></div>
+                        <div > <i class='bx bxl-react bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;" title="React"></i></div>
                     </div>
                     
-                    <div id="Tool4" class="Tool txt " style="background-color: rgb(181, 201, 195);">
-                        <div > <i class='bx bxl-javascript bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;"></i></div>
+                    <div id="Tool9" class="Tool txt " style="background-color: rgb(181, 201, 195);">
+                        <div > <i class='devicon-javascript-plain centrar' style="font-size: 75px; color: cadetblue;  margin-top: 1rem;" title="Javascript"></i></div>
                     </div>
     
                     <div id="Tool5" class="Tool txt">
-                        <div > <i class='bx bxl-html5 bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;"></i></div>
+                        <div > <i class='bx bxl-html5 bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;" title="HTML5"></i></div>
                     
                     </div>
     
-                    <div id="Tool6" class="Tool txt " style="background-color: rgb(181, 201, 195);">
-                        <div > <i class='bx bxl-git bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;"></i></div>
+                    <div id="Tool10" class="Tool txt " style="background-color: rgb(181, 201, 195);">
+                        <div > <i class='bx bxl-git bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;" title="git"></i></div>
                     </div>
     
                     <div id="Tool7" class="Tool txt">
-                        <div > <i class='bx bxl-css3 bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;"></i></div>
+                        <div > <i class='bx bxl-css3 bx-tada bx-hover bx-border-circle' style="font-size: 75px; color: cadetblue;" title="CSS3"></i></div>
                     </div>
-    
-                    
+
+                    <div id="Tool2" class="Tool txt">
+                        <div > <i class="devicon-mongodb-plain-wordmark colored centrar" style="font-size: 75px; color: cadetblue; margin-top: 1rem;" title="MongoDB"></i></div>
+                    </div>
+                    <div id="Tool4" class="Tool txt">
+                        <div > <i class="devicon-mysql-plain colored centrar" style="font-size: 75px; color: cadetblue; margin-top: 1rem;" title="MySQL"></i></div>
+                    </div>
+                    <div id="Tool6" class="Tool txt">
+                        <div > <i class="devicon-express-original colored centrar" style="font-size: 75px; color: cadetblue; margin-top: 1rem;" title="Express"></i></div>
+                    </div>
+                    <div id="Tool8" class="Tool txt">
+                        <div > <i class="devicon-jupyter-plain-wordmark colored centrar" style="font-size: 75px; color: cadetblue; margin-top: 1rem;" title="Jupyter"></i></div>
+                    </div>
                     
                 </div>
         </div>
@@ -162,11 +201,11 @@
       
     
         <!-- ******************************** Projects  ********************************-->
+        <h2 class="secundarioProject" id="title_Project"> Projects and Awards </h2>
+                
         <section id="projects">
             <div class="containerProject"> 
             
-                <h2 class="secundarioProject" id="title_Project"> Projects and Awards </h2>
-                
                 <div id="Project1" class = "txtProject1"  >
                     <p id="titleproject1" class="ProjectContent txt"> Projects in which I participated: Siglo XXI, Hospital Eme Red, Crío, Fraccionamiento Punta Esmeralda, Centro de Salud con Servicios amplios Progreso</p>
                     <div id="IMGProject1" class=" txt centrar">
@@ -184,14 +223,15 @@
             </div>
 
         </section>
+        <h2 class="secundarioContact" id="title_Contact"> Contact Me </h2>
+    </div>
         
-
-        
+    
        <!-- ******************************** Contact ********************************  -->
        <section id="contact">
         <div class="containerContact"> 
             
-            <h2 class="secundarioContact" id="title_Contact"> Contact Me </h2>
+            
             
             <div id="Contact1" class = "txtContact1"  >
     
@@ -204,13 +244,10 @@
                 <div id="cont2" class=" txt centrar" >
                     <div class=" centrar"> <i class='bx bx-mail-send bx-fade-right bx-hover bx-border-circle' style="font-size: 40px; color: cadetblue;"></i></div>
                 </div>
-                <p id="mail" class="centrar">cindyravell@gmail.com</p>
-                <p id="mail2" class="centrar">cindy.ravell@theksquaregroup.com</p>
-                
-                <div id="cont3" class=" txt centrar">
-                    <div class=" centrar"> <i class='bx bx-phone bx-fade-right bx-hover bx-border-circle' style="font-size: 40px; color: cadetblue;"></i></div>
-                </div>
-                <p id="tel" class="centrar">9998993575 </p>
+            
+                <a id="mail1" class="centrar" href="cindy.ravell@theksquaregroup.com" style="color: black;"> Professional e-mail </a>
+                <a id="mail2" class="centrar" href="cindyravell@gmail.com" style="color: black;"> Personal e-mail </a>
+
                 
             
     

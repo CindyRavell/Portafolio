@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kiwi+Maru:wght@500&display=swap');
 
+.FatherContainer{
+    width: 85%;
+    margin: auto;
+   
 
+}
 :target::before {
     content: "";
     display: block;
-    height: 50px; /* aquí la altura de la cabecera fija*/
-    margin: -50px 0 0; /* altura negativa de la cabecera fija */
+    height: 70px; /* aquí la altura de la cabecera fija*/
+    margin: -70px 0 0; /* altura negativa de la cabecera fija */
   }
 /*General format*/
 *,::before,::after{
@@ -14,7 +19,10 @@
 html{
     scroll-behavior: smooth;
     background-color:  rgb(204, 196, 202);
+
 }
+
+
 
 body{
     flex-direction: column;
@@ -36,7 +44,7 @@ a{
 }
 img{
     
-    max-width: 50%;
+    max-width: 40%;
     top: 100px;
     height: auto;
     display: block;        
@@ -49,7 +57,7 @@ img{
     font-family: 'Amatic SC', cursive;
     font-family: 'Kiwi Maru', serif;
     font-size: 90%;
-    color: grey;
+    color: rgb(53, 48, 52);
 }
 /* ****************      HEAD - NAV BAR     **************** */
 .nav_Grid{
@@ -57,7 +65,7 @@ img{
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
-    width: calc(100% - 2rem);
+    width: calc(100% - 6rem);
     margin-left: 1 rem;
     margin-right: 1 rem;
 }
@@ -83,7 +91,9 @@ img{
 
 /*OCULTAR*/
 @media screen and (max-width: 768px){
-    
+    .navLogo{
+        margin-left: 8%;
+    }
     
     .nav_menu{
         position: fixed;
@@ -92,7 +102,7 @@ img{
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: rgba(100, 48, 85,.9);
+        background-color: rgba(182, 155, 174, 0.9);
         transition: 1s;
         
     }
@@ -106,13 +116,13 @@ img{
 
 .nav_link{
     position: relative;
-    color: rgb(177, 197, 202);
+    color: rgb(61, 79, 83);
 }
 
 
 .nav_link:hover{
     position:center;
-    color: rgb(88, 133, 134);
+    color: rgb(84, 87, 87);
 }
 
 .nav_link:hover::after{
@@ -122,11 +132,9 @@ img{
     height: .18rem;
     left: 0;
     top: 2rem;
-    background-color:aqua ;}
+    background-color:rgb(108, 163, 163) ;}
 
-.navLogo{
-    margin-left: .5rem;
-}
+
 .nav_logo{
     color:rgb(77, 36, 64);
 }
@@ -151,21 +159,24 @@ img{
     height: 0.18rem;
     left: 0;
     top: 2rem;
-    background-color:aqua;
+    background-color:(108, 163, 163);
   }
 /*=== Show menu ===*/
 .show{
     right: 0;
   }
 @media screen and (min-width: 768px){
-.nav_toogle{
-    color:rgb(77, 36, 64);
-    font-size: 2rem;
-    cursor: pointer;
-    visibility: hidden;
-}
-.nav_toggle:hover{
-    color:rgb(134, 69, 114);
+    .navLogo{
+        margin-left: 8%;
+    }
+    .nav_toogle{
+        color:rgb(77, 36, 64);
+        font-size: 2rem;
+        cursor: pointer;
+        visibility: hidden;
+    }
+    .nav_toggle:hover{
+        color:rgb(134, 69, 114);
 }
 }
 
@@ -205,8 +216,8 @@ img{
         row-gap: 1rem;
         display: grid;
         background-color: rgb(212, 212, 212);
-        grid-template-columns: .2fr 2fr .2fr;
-        grid-template-rows: .2fr 2fr 2fr .2fr;
+        grid-template-columns: .1fr 2fr .1fr;
+        grid-template-rows: .1fr 2fr 2fr .1fr;
         grid-template-areas: 
         ".   .     ."
         ". cuadro  ."
@@ -239,11 +250,11 @@ img{
 
     .container_principal_section {
         width: 100%;
-        height:100%;
+        height: 100%;
         display: grid;
         background-color: rgb(212, 212, 212);
         grid-template-columns: 1fr 2fr 2fr 1fr;
-        grid-template-rows: 1fr 2fr 2fr 1fr;
+        grid-template-rows: .6fr 2fr 2fr .5fr;
         grid-template-areas: 
         ".   .   .   ."
         ". cuadro cuadro ."
@@ -306,6 +317,102 @@ img{
     
     }
     
+/******************Intereses**********************/
+
+#title_interes{
+    grid-area: interesTitle;
+  
+
+}
+#interes1{
+  grid-area: interes1;
+  animation-name: appered1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  padding: 5% ;
+  box-sizing: border-box;
+}
+
+#interes2{
+    grid-area: interes2;
+    animation-name: appered2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    padding: 5% ;
+    box-sizing: border-box;
+}
+
+#interes3{
+  grid-area: interes3;
+  animation-name: appered3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  padding: 5% ;
+  box-sizing: border-box;
+}
+
+#interes5{
+    grid-area: interes5;
+    animation-name: appered5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    padding: 5% ;
+    box-sizing: border-box;
+}
+
+#interes4{
+  grid-area: interes4;
+  animation-name: appered4;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  padding: 5% ;
+  box-sizing: border-box;
+}
+#textInteres{
+    grid-area: textInteres;
+    
+}
+
+
+@media screen and (min-width: 768px) {
+
+.containerInteres {
+    height: 100%;
+    display: grid;
+    background-color:rgb(204, 197, 201);
+    grid-template-columns: 0fr 1fr 1fr 1fr .05fr;
+    grid-template-rows: .25fr 1fr 1fr .25fr;
+    grid-template-areas: 
+    " .  interesTitle interesTitle interesTitle   . "
+    " .  textInteres textInteres textInteres  . "
+    " .  textInteres textInteres textInteres  . ";
+}
+
+.txtInteres{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows:  1fr;
+    grid-template-areas: 
+    "interes1 interes2 interes3"
+    "interes4 interes5 .";
+}
+
+.Interes{
+    background-color: rgb(169, 184, 181);
+    margin: 5%;
+
+}
+}
+
+
+.InteresContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10;
+    background-color: rgb(204, 197, 201);
+}
+
 
 /* **************** Skills page **************** */
 
@@ -400,22 +507,21 @@ img{
     display: grid;
     background-color:rgb(204, 197, 201);
     grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
-    grid-template-rows: .25fr 1fr 1fr 1fr .25fr;
+    grid-template-rows: .25fr 1fr 1fr  .25fr;
     grid-template-areas: 
     " .  skillTitle skillTitle skillTitle   . "
     " .  textSkill textSkill textSkill  . "
     " .  textSkill textSkill textSkill  . "
-    " .  textSkill textSkill textSkill  .";
+    " .  .  .  .  .";
 }
 
 .txtSkill{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
     grid-template-areas: 
     "skill1 skill2 skill3"
-    "skill4 skill5 skill6"
-    "skill7 skill8 .";
+    "skill4 skill5 . ";
 }
 
 .skill{
@@ -476,7 +582,6 @@ img{
 
 /* **************** Tools page **************** */
 
-
 #title_Tools{
     grid-area: ToolTitle;
   
@@ -517,6 +622,7 @@ img{
 
 #textTools{
     grid-area: textTool;
+
 }
 
 .containerTools {
@@ -524,22 +630,25 @@ img{
     display: grid;
     background-color: rgb(204, 197, 201);
     grid-template-columns: .15fr 1fr 1fr 1fr .15fr;
-    grid-template-rows: .25fr 1.5fr 1.5fr 1.5fr .25fr;
+    grid-template-rows: .20fr 1.5fr 1.5fr 1.5fr .25fr;
     grid-template-areas: 
     " .  ToolTitle ToolTitle ToolTitle   . "
     " .  textTool textTool textTool  . "
     " .  textTool textTool textTool  . "
+    " .  textTool textTool textTool  ."
     " .  textTool textTool textTool  .";
 }
 
 .txtTools{
     display: grid;
+    justify-items: center;
     grid-template-columns:  1fr 1fr 1fr;
     grid-template-rows:  1fr 1fr 1fr;
     grid-template-areas: 
     "Tool1 Tool2 Tool3"
     "Tool4 Tool5 Tool6"
-    "Tool7 Tool8 .";
+    "Tool7 Tool8 Tool9"
+    "Tool10 Tool11 Tool12";
 }
 
 .Tool{
@@ -547,7 +656,13 @@ img{
     border-radius: 50%;
     width: 120px;
     height: 120px; 
-    background-color: rgb(169, 184, 181);    
+    background-color: rgb(169, 184, 181);  
+    margin-top: 1rem;  
+    margin-left: .5rem;
+    margin-left: .5rem;
+    align-self: center;
+    justify-content: center;
+    
 }
 
   
@@ -716,7 +831,7 @@ img{
     display: grid;
     background-color: rgb(204, 197, 201);
     grid-template-columns: .02fr 1fr 1fr .02fr;
-    grid-template-rows: .25fr 1fr 1fr .02fr;
+    grid-template-rows: 0 1fr 1fr .02fr;
     grid-template-areas: 
     " .  ContactTitle ContactTitle   . "
     " .  Contact1  Contact2  . "
